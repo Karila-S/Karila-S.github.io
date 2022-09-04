@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="style" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador - One/Alura</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <img src="logo.png" alt="Logo da alura com a inicial da letra a" class="logo">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="digite seu texto:"></textarea>
+            <div class="info">
+                <img src="bi_exclamation-circle-fill.png">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Criptografar
+                </button>
+                <button class="descriptografar" onclick="btnDescriptografar()">
+                    Descriptografar
+                </button>
+            </div>
+
+        </section>
+
+        <section class="text-area2">
+            <div id="desaparece">
+                <img src="boneco.png" alt="menino segurando lupa, nao encontrou mensagem" class="img-lupa">
+                <p class="texto-lupa1">Nenhuma mensagem encontrada</p>
+                <p class="texto-lupa2">Texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <textarea class="output-texto" cols="18" rows="8"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Karila - Challenge Alura-One T3</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
